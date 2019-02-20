@@ -1,7 +1,7 @@
 
 
 ## Overview
-This is the code for my group course project for the course CMPT 726(Machine Learning) at Simon Fraser University. We have used a locally optimized version of a conditional GAN to generate synthetic car logo images from the existing dataset. Complete details can be found in the [project report](https://github.com/jsully1996/AI_Projects/Synthetic_Image_Generation_with_AC-GANs/report.pdf).
+This is the code for my group course project for the course CMPT 726(Machine Learning) at Simon Fraser University. We have used a locally optimized version of a conditional GAN to generate synthetic car logo images from the existing dataset. Complete details can be found in the [project report](https://github.com/jsully1996/AI_Projects/blob/master/Synthetic_Image_Generation_with_AC-GANs/report.pdf).
 
 
 ## Dependencies  
