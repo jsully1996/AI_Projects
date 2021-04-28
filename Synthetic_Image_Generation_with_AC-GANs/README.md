@@ -34,7 +34,7 @@ Execute file with Python 3+
 
 ## Data Collection and Augmentation
 Our dataset is composed of 23 classes, each corresponding to a different type of car logo. each class comprises 1000 stock images of varying resolutions and vectors. The decision of using car logos as a base dataset was because we felt it was probably a hitherto unexplored approach. 4 channel and 3 channel images alike were scraped and then reduced to an RGB (3 channel) format.  We had to perform a lot of manual filtering and cleaning of individual images for each class because the logo images were mixed with images of entire cars featuring logos on them, graphically edited logos or even entirely unrelated images that were merely scraped due to the matching search term. Doing this would ensure that only relevant and structurally sound pictures would be fed to the GAN. The images are then resized to a 256x256 standard before being fed to the network.
-<img src="./extras/data.png">
+<br><img src="./extras/data.png">
 
 To increase the number of training examples, we also perform rudimentary data augmentation. The <a href='./Augmentate.py'>Augmentation.py</a> tool scans a directory containing image files, and generates new images by performing a specified set of augmentation operations on each file that it finds. This process multiplies the number of training examples that can be used when developing a neural network, and should significantly improve the resulting network's performance, particularly when the number of training examples is relatively small. One or more transform arguments determine what types of augmentation operations will be performed, using the codes listed in the table below:
 |Code|Description|Example Values|
