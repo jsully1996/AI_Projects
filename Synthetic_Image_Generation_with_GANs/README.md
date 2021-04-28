@@ -83,7 +83,7 @@ All generative models are probabilistic in nature. When we ask a generative mode
 standard deviation = 0.02
 * The logits generated are passed through a sigmoid function
 
-##Enhancements
+## Enhancements
 We address some of the ways in which our model could possibly fail and introduce possible solutions to
 achieve convergence:
 * Feature Matching: The logical thing to do while designing a GAN is to aim for a cost function such that the generator finds the best image which can be classified by the discriminator as real. However, while both generator and discriminator keep optimizing by competing against one another, the model might never converge due to the adversarial nature of the model. Feature matching changes the cost function for the generator to minimizing the statistical difference between the features of the real images and the generated images. For this model, we shall measure the L2-distance between the means of their feature vectors. The new cost function is given by:  
